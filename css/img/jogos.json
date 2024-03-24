@@ -1,0 +1,30 @@
+[
+    {
+        "nome": "assassins creed",
+        "image": "../css/img/assassins creed.jpg"
+    },
+    {
+        "nome": "call_of_duty",
+        "image": "../css/img/call_of_duty.jpg"
+    },
+    {
+        "nome": "capitão_america",
+        "image": "../css/img/capitão_america.jpg"
+    },
+    {
+        "nome": "gears of war",
+        "image": "../css/img/gears of war.jpg"
+    },
+    {
+        "nome": "mortal_combate",
+        "image": "../css/img/mortal_combate.jpg"
+    },
+    {
+        "nome": "thor",
+        "image": "../css/img/THOR.jpg"
+    },
+    {
+        "nome": "tomb_raider",
+        "image": "../css/img/tomb_raider.jpg"
+    }
+] 

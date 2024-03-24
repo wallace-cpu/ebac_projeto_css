@@ -1,0 +1,261 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2F4F4F;
+    position: sticky;
+    
+}
+header logo{
+    display: flex;
+    padding: 10px;
+    
+}
+header logo h1{
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    letter-spacing: 10px;
+}
+h1:hover{
+    transition: 1s;
+    font-size: 35px;
+    color: floralwhite;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+}
+.nav li{
+    list-style: none;
+}
+.nav li a{
+    padding: 5px;
+    font-size: 1.35rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: 1s ease-in-out;
+    
+}
+a::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(94, 202, 202);
+    width: 0%;
+    height: 4px;
+}
+a:hover::after{
+    width: 100%;
+    transition: 1s ease-in-out;
+    color: dimgray;
+    cursor: pointer;
+
+}
+#home{
+    display: flex;
+    flex-direction: row;
+    /*background-color: #2F4F4F;*/
+    height: 900px;
+    justify-content: end;
+
+}
+#home::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../css/img/img_fundo.jpg) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+ 
+h2{
+    display: flex;
+    margin-top: 50%;
+    font-size: 35px;
+    
+}
+p{
+    color: #fff;
+    margin-top: 20px;
+  
+}
+h2:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    color: rgb(214, 214, 216);
+
+    
+}
+p:hover{
+    color: deepskyblue;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 50px;
+    letter-spacing: 20px;
+    margin: 50px auto;
+}
+#produto{
+    display: flex;
+    background-color: #2F4F4F;
+    padding: 84px 4%;
+}
+.imagens{
+   width: 100%;
+   flex-wrap: wrap;
+   display: flex;
+}
+.imagens img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+    
+}
+#contato{
+    display: flex;
+    background-color: #2F4F4F;
+    padding: 84px 4%;
+}
+.box{
+    display: flex;
+    padding: 90px 33%;
+    width: 100%;
+   
+
+
+}
+form{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    width: 450px;
+    height: 500px;
+    box-shadow: 10px 20px 25px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+}
+
+form input{
+    width: 80%;
+    height: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+
+}
+input[type]{
+    color: #000000;
+    font-size: 15px;
+}
+form textarea{
+    width: 80%;
+    height: 30vh;
+    margin-top: 35px;
+    resize: none;
+    border-radius: 10px;
+}
+button{
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 25px;
+    font-size: 17px;
+    box-shadow: 10px 20px 25px 0px rgba(0,0,0,0.75);
+}
+button:hover{
+    transform: scale(1.3);
+    transition: 1s ease-in-out;
+    color: rgb(23, 24, 24);
+    background-color: cornsilk;
+}
+footer{
+    display: flex;
+    padding: 85px;
+    margin: 4%;
+    background-color: #2F4F4F; 
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__nav{
+    display: flex;
+}
+.footer__nav li{
+    list-style: none;
+}
+.footer__nav li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+.footer__social{
+    display: flex;
+}
+.footer__social a{
+   width: 80px;
+   height: 80px;
+   text-align: center;
+   text-decoration: none;
+   color: #000;
+   box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+   margin: 0 30px;
+   border-radius: 50%;
+   position: relative;
+   overflow: hidden;
+   transition: transform 0.5s;
+}
+
+
+.footer__social a img{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 10;
+  transition: color 0.5s;
+}
+.footer__social a::after{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #4556e1, #4556e1);
+    position: absolute;
+    transition: 0.5s;
+}
+.footer__social a:hover::after{
+    top: 0;
+}
+.footer__social a:hover img{
+    color: #fff;
+}
+.footer__social a:hover{
+    transform: translate(-10px);
+}
+.footer{
+    margin-bottom: 0px;
+}
